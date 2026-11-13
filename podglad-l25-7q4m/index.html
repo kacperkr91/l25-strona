@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="pl" data-lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L25 Premium Apartments – apartamenty w Krakowie, Podgórze</title>
+<meta name="description" content="Siedem apartamentów na poddaszu kamienicy przy ul. Limanowskiego 25 w krakowskim Podgórzu. Klimatyzacja, okna dachowe, samodzielne zameldowanie, bezpłatny parking.">
+<link rel="icon" href="../img/mark.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://l25apartments.pl/">
+<meta property="og:title" content="L25 Premium Apartments – Kraków, Podgórze">
+<meta property="og:description" content="Siedem apartamentów na poddaszu kamienicy przy Limanowskiego 25. Klimatyzacja, okna dachowe, samodzielne zameldowanie, bezpłatny parking.">
+<meta property="og:image" content="https://l25apartments.pl/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LodgingBusiness","name":"L25 Premium Apartments","url":"https://l25apartments.pl/","image":"https://l25apartments.pl/img/og.jpg","telephone":"+48888488519","email":"rezerwacje@l25apartments.pl","address":{"@type":"PostalAddress","streetAddress":"ul. Bolesława Limanowskiego 25","addressLocality":"Kraków","addressCountry":"PL"},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Air conditioning","value":true},{"@type":"LocationFeatureSpecification","name":"Free parking","value":true},{"@type":"LocationFeatureSpecification","name":"Wi-Fi","value":true}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: a quiet, left-aligned page in one geometric sans taken from the logo wordmark; apartment numbers sit as black door-plate badges on the photos; the stairwell checkerboard appears as a band. */
+:root{
+  --paper:#FAFAF8;      /* cool chalk white of the attic walls */
+  --ink:#232323;        /* graphite, the black fittings */
+  --oak:#A2703F;        /* oak floors and doors */
+  --slate:#6F808B;      /* skylight blue-grey accent walls */
+  --stone:#ECECE8;      /* marble/stone panels */
+  --line:#D6D6D1;
+  --muted:#4A4A46;
+  --display:"Jost","Futura","Century Gothic",system-ui,sans-serif;
+  --body:"Jost","Futura","Century Gothic",system-ui,sans-serif;
+  --wrap:1240px;
+  --gut:clamp(16px,4vw,48px);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--oak);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.12;letter-spacing:-.015em;margin:0;text-wrap:balance}
+h2{font-size:clamp(34px,4.6vw,56px)}
+h3{font-size:26px}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+section{padding:clamp(72px,9vw,128px) 0}
+.lede{font-size:clamp(18px,1.6vw,20px);max-width:58ch;color:var(--muted)}
+
+/* language switching */
+html[data-lang="pl"] [lang="en"]:not(html), html[data-lang="en"] [lang="pl"]:not(html){display:none!important}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:28px;height:84px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:62px;width:auto}
+.brand span{font:500 13px/1.1 var(--body);letter-spacing:.14em}
+nav{display:flex;gap:24px;margin-left:auto}
+nav a{text-decoration:none;font-size:15px;font-weight:400}
+nav a:hover{color:var(--oak)}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang button{border:0;background:none;font:500 13px var(--body);padding:6px 11px;cursor:pointer;color:var(--muted)}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);font:400 15px var(--body);padding:13px 24px;border-radius:2px;text-decoration:none;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:var(--oak);border-color:var(--oak)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.menu-toggle{display:none}
+@media (max-width:900px){
+  nav{display:none;position:absolute;top:84px;left:0;right:0;background:var(--paper);flex-direction:column;gap:0;border-bottom:1px solid var(--line);padding:8px var(--gut) 16px}
+  nav.open{display:flex}
+  nav a{padding:10px 0;font-size:17px}
+  .menu-toggle{display:inline-flex;margin-left:auto;border:1px solid var(--line);background:none;padding:8px 12px;font:400 14px var(--body);cursor:pointer}
+  .bar .btn{display:none}
+}
+
+/* hero */
+.hero{padding:clamp(32px,5vw,64px) 0 0}
+.hero-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,64px);align-items:end}
+.hero h1{font-size:clamp(38px,4.8vw,66px);letter-spacing:-.025em}
+.hero .addr{font-size:15px;color:var(--muted);margin-bottom:28px;letter-spacing:.02em}
+.hero .lede{margin:28px 0 36px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero figure{margin:0;aspect-ratio:4/3.3;overflow:hidden}
+.hero figure img{width:100%;height:100%;object-fit:cover}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);margin-top:clamp(32px,5vw,56px)}
+.facts div{padding:20px 20px 22px 0;font-size:15px;color:var(--muted)}
+.facts div+div{padding-left:20px;border-left:1px solid var(--line)}
+.facts b{display:block;font:500 30px/1.1 var(--display);color:var(--ink);margin-bottom:4px}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero figure{order:-1;aspect-ratio:4/3}.facts{grid-template-columns:1fr 1fr}.facts div:nth-child(3){padding-left:0;border-left:0}.facts div:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* checker band, from the stairwell floor */
+.checker{height:28px;background:conic-gradient(var(--ink) 25%,var(--paper) 0 50%,var(--ink) 0 75%,var(--paper) 0) 0 0/28px 28px;opacity:.92}
+
+/* apartments */
+.sec-head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,64px);align-items:end;margin-bottom:clamp(40px,5vw,64px)}
+@media (max-width:860px){.sec-head{grid-template-columns:1fr}}
+.apts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(36px,4vw,56px) clamp(20px,2.4vw,32px)}
+.apt.wide{grid-column:span 2}
+@media (max-width:1020px){.apts{grid-template-columns:repeat(2,minmax(0,1fr))}.apt.wide{grid-column:auto}.apt:first-child{grid-column:1/-1}}
+@media (max-width:640px){.apts{grid-template-columns:1fr}.apt:first-child{grid-column:auto}}
+.apt{display:grid;gap:16px}
+.apt .ph{position:relative;height:clamp(230px,21vw,290px);overflow:hidden;background:var(--stone);cursor:zoom-in;border:0;padding:0;width:100%}
+.apt .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 62%;transition:transform .6s ease}
+.apt .ph:hover img{transform:scale(1.03)}
+.apt .badge-unused{position:absolute;left:0;top:0;background:var(--ink);color:var(--paper);font:500 15px/1 var(--body);letter-spacing:.04em;padding:11px 14px 10px}
+.apt .badge b{font-weight:600;font-size:20px;margin-left:2px}
+.apt .count{position:absolute;right:12px;bottom:12px;background:var(--paper);font:500 13px var(--body);padding:5px 10px}
+.apt .row{display:grid;gap:10px;justify-items:start}
+.apt h3{font-size:21px}
+.apt .links{display:flex;gap:18px;font-size:15px;font-weight:500}
+.apt .links button,.apt .links a{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--oak)}
+.apt .tags{color:var(--muted);font-size:15px}
+.apt .guests{color:var(--ink);font-weight:500}
+.lb-desc{display:block;font-size:15px;color:#C9C9C4;max-width:70ch;margin-top:2px}
+
+/* amenities */
+.amen{background:var(--stone)}
+.amen-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
+.amen-grid div{padding:28px 28px 30px 0;border-bottom:1px solid var(--line)}
+.amen-grid h3{font-size:22px;margin-bottom:8px}
+.amen-grid p{color:var(--muted);font-size:16px;max-width:36ch}
+@media (max-width:860px){.amen-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.amen-grid{grid-template-columns:1fr}}
+
+/* building */
+.bld{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(12px,1.6vw,20px);align-items:start}
+.bld figure{margin:0;overflow:hidden;background:var(--stone)}
+.bld img{width:100%;height:100%;object-fit:cover}
+.bld .t{grid-column:1/6;align-self:center;padding-right:clamp(0px,2vw,32px)}
+.bld .t p{color:var(--muted);margin-top:22px;max-width:46ch}
+.bld .a{grid-column:6/10;aspect-ratio:3/4}
+.bld .b{grid-column:10/13;aspect-ratio:3/4.6;margin-top:18%}
+.bld .c{grid-column:2/6;aspect-ratio:4/3}
+.bld .d{grid-column:6/9;aspect-ratio:3/4}
+.bld .e{grid-column:9/13;aspect-ratio:4/3}
+@media (max-width:860px){.bld .t{grid-column:1/-1}.bld .a,.bld .c{grid-column:1/7}.bld .b,.bld .d{grid-column:7/13;margin-top:0}.bld .e{grid-column:1/-1}}
+
+/* area */
+.area{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,64px)}
+.dist{list-style:none;padding:0;margin:32px 0 0;border-top:1px solid var(--line)}
+.dist li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--line);font-size:16px}
+.dist span:last-child{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.mosaic{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:clamp(90px,11vw,150px);gap:clamp(8px,1.2vw,14px)}
+.mosaic figure{margin:0;overflow:hidden;position:relative}
+.mosaic img{width:100%;height:100%;object-fit:cover}
+.mosaic figcaption{position:absolute;left:0;bottom:0;background:var(--paper);font-size:13px;padding:4px 10px}
+.m1{grid-column:1/5;grid-row:span 3}.m2{grid-column:5/7;grid-row:span 2}.m3{grid-column:5/7;grid-row:span 2}
+.m4{grid-column:1/3;grid-row:span 2}
+.map{margin-top:clamp(40px,5vw,64px);display:grid;grid-template-columns:minmax(0,1fr) 320px;border:1px solid var(--line);background:var(--stone)}
+.map-ph{height:440px;display:grid;place-items:center;text-align:center;padding:24px;color:var(--muted);font-size:15px}
+.map iframe{width:100%;height:440px;border:0;display:block;filter:grayscale(.85) contrast(1.05)}
+.map-side{padding:28px;display:flex;flex-direction:column;gap:14px;justify-content:space-between}
+.map-side h3{font-size:22px}
+.map-side p{color:var(--muted);font-size:16px}
+.map-side .btns{display:flex;flex-direction:column;gap:10px}
+@media (max-width:860px){.map{grid-template-columns:1fr}.map-ph{height:440px;display:grid;place-items:center;text-align:center;padding:24px;color:var(--muted);font-size:15px}
+.map iframe{height:320px}}.m5{grid-column:3/5;grid-row:span 2}.m6{grid-column:5/7;grid-row:span 1}
+@media (max-width:860px){.area{grid-template-columns:1fr}}
+
+/* booking */
+.book{background:var(--ink);color:var(--paper)}
+.book .lede{color:#C9C9C4}
+.book-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,64px);align-items:start}
+@media (max-width:860px){.book-grid{grid-template-columns:1fr}}
+form{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px}
+form .full{grid-column:1/-1}
+label{display:grid;gap:6px;font-size:14px;color:#C9C9C4}
+input,select,textarea{font:400 16px var(--body);color:var(--paper);background:transparent;border:0;border-bottom:1px solid #6A6A66;padding:10px 0;border-radius:0}
+select option{color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-bottom-color:var(--paper)}
+input::-webkit-calendar-picker-indicator{filter:invert(1)}
+textarea{resize:vertical;min-height:70px}
+.book .btn{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.book .btn:hover{background:var(--oak);border-color:var(--oak);color:var(--paper)}
+.book .btn.ghost{background:transparent;color:var(--paper);border-color:#8A8A85}
+.book .btn.ghost:hover{border-color:var(--paper)}
+.form-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.form-msg{font-size:14px;color:#E0C9A8;min-height:1.4em}
+.ota{display:flex;flex-wrap:wrap;gap:20px;margin-top:28px;font-size:15px}
+.ota a{color:var(--paper);text-underline-offset:4px;text-decoration-color:var(--oak)}
+@media (max-width:520px){form{grid-template-columns:1fr}}
+
+/* info */
+.info{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(24px,4vw,64px)}
+details{border-top:1px solid var(--line);padding:18px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font:500 20px var(--display);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--body);font-weight:300}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:10px;max-width:56ch}
+@media (max-width:760px){.info{grid-template-columns:1fr}}
+
+/* contact + footer */
+.contact{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;border-top:1px solid var(--line);padding-top:28px;margin-top:40px}
+.contact div{font-size:16px}
+.contact small{display:block;color:var(--muted);font-size:14px;margin-bottom:4px}
+.contact a{text-decoration:none;font:500 20px var(--display)}
+@media (max-width:760px){.contact{grid-template-columns:1fr}}
+footer{border-top:1px solid var(--line);padding:48px 0 40px;font-size:14px;color:var(--muted)}
+.foot{display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:start}
+.foot img{height:92px;width:auto}
+@media (max-width:760px){.foot{grid-template-columns:1fr}}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(20,20,20,.96);display:none;grid-template-rows:auto 1fr auto;color:var(--paper)}
+.lb.open{display:grid}
+.lb-top{display:flex;justify-content:space-between;align-items:center;padding:14px var(--gut);font-size:15px}
+.lb-top b{font:500 22px var(--display)}
+.lb-stage{position:relative;display:flex;align-items:center;justify-content:center;min-height:0;padding:0 64px}
+.lb-stage img{max-height:100%;max-width:100%;object-fit:contain}
+.lb button{background:none;border:1px solid #6A6A66;color:var(--paper);font:300 22px var(--body);width:46px;height:46px;cursor:pointer;border-radius:50%}
+.lb button:hover{border-color:var(--paper)}
+.lb .prev,.lb .next{position:absolute;top:50%;transform:translateY(-50%)}
+.lb .prev{left:10px}.lb .next{right:10px}
+.lb-thumbs{display:flex;gap:6px;overflow-x:auto;padding:12px var(--gut) 18px;justify-content:center}
+.lb-thumbs img{height:56px;width:76px;object-fit:cover;opacity:.45;cursor:pointer;flex:none}
+.lb-thumbs img.on{opacity:1;outline:1px solid var(--paper)}
+@media (max-width:600px){.lb-stage{padding:0 8px}.lb .prev,.lb .next{top:auto;bottom:-56px;transform:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="L25 Premium Apartments">
+      <img src="../img/logo.png" alt="L25 Premium Apartments" width="48" height="56">
+    </a>
+    <button class="menu-toggle" id="menuBtn" aria-expanded="false" aria-controls="nav"><span lang="pl">Menu</span><span lang="en">Menu</span></button>
+    <nav id="nav">
+      <a href="#apartamenty"><span lang="pl">Apartamenty</span><span lang="en">Apartments</span></a>
+      <a href="#budynek"><span lang="pl">Budynek</span><span lang="en">Building</span></a>
+      <a href="#okolica"><span lang="pl">Okolica</span><span lang="en">Neighbourhood</span></a>
+      <a href="#informacje"><span lang="pl">Informacje</span><span lang="en">Good to know</span></a>
+      <a href="#kontakt"><span lang="pl">Kontakt</span><span lang="en">Contact</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Język / Language">
+      <button type="button" data-set-lang="pl" aria-pressed="true">PL</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="btn" href="#rezerwacja"><span lang="pl">Sprawdź dostępność</span><span lang="en">Check availability</span></a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="addr">ul. Bolesława Limanowskiego 25 · Podgórze, Kraków</p>
+          <h1 lang="pl">Siedem apartamentów pod dachem podgórskiej kamienicy</h1>
+          <h1 lang="en">Seven apartments under the roof of a Podgórze tenement</h1>
+          <p class="lede" lang="pl">Jasne wnętrza z oknami dachowymi, klimatyzacja i własna kuchnia w każdym apartamencie. Zameldowanie bez czekania na klucze, a bezpłatny parking 7 minut spacerem.</p>
+          <p class="lede" lang="en">Bright rooms under skylights, air conditioning and a full kitchen in every apartment. Check in with a door code whenever you arrive, with free parking a 7-minute walk away.</p>
+          <div class="actions">
+            <a class="btn" href="#rezerwacja"><span lang="pl">Sprawdź dostępność</span><span lang="en">Check availability</span></a>
+            <a class="btn ghost" href="#apartamenty"><span lang="pl">Zobacz apartamenty</span><span lang="en">See the apartments</span></a>
+          </div>
+        </div>
+        <figure><img src="../img/18-18-4.webp" alt="Salon z oknami dachowymi w apartamencie L25/18" fetchpriority="high"></figure>
+      </div>
+      <div class="facts">
+        <div><b>7</b><span lang="pl">apartamentów na poddaszu</span><span lang="en">attic apartments</span></div>
+        <div><b>9,4<small style="font-size:.55em;font-weight:400;color:var(--muted)"> / 10</small></b><span lang="pl">ocena gości na Booking.com</span><span lang="en">guest rating on Booking.com</span></div>
+        <div><b>7 min</b><span lang="pl">spacerem do bezpłatnego parkingu</span><span lang="en">walk to free parking</span></div>
+        <div><b>3 min</b><span lang="pl">pieszo do Placu Bohaterów Getta</span><span lang="en">walk to Ghetto Heroes Square</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="checker" aria-hidden="true"></div>
+
+  <section id="apartamenty">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><span lang="pl">Apartamenty</span><span lang="en">The apartments</span></h2>
+        <p class="lede" lang="pl">Każdy apartament ma swój numer na drzwiach i swój charakter: inną ścianę akcentową, inną łazienkę, inny układ pod skosami. Kliknij zdjęcie, żeby obejrzeć całą galerię.</p>
+        <p class="lede" lang="en">Each apartment has its own number on the door and its own character: a different accent wall, a different bathroom, a different layout under the eaves. Click a photo to open the full gallery.</p>
+      </div>
+      <div class="apts" id="apts"></div>
+    </div>
+  </section>
+
+  <section class="amen" id="udogodnienia">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><span lang="pl">W każdym apartamencie</span><span lang="en">In every apartment</span></h2>
+        <p class="lede" lang="pl">Wszystko, czego potrzeba na weekend w Krakowie i na dłuższy pobyt.</p>
+        <p class="lede" lang="en">Everything you need for a city weekend or a longer stay.</p>
+      </div>
+      <div class="amen-grid">
+        <div><h3 lang="pl">Klimatyzacja</h3><h3 lang="en">Air conditioning</h3><p lang="pl">Chłodno latem pod dachem i ciepło zimą, z regulacją w każdym apartamencie.</p><p lang="en">Cool in summer under the roof, warm in winter, controlled in each apartment.</p></div>
+        <div><h3 lang="pl">Własna kuchnia</h3><h3 lang="en">Your own kitchen</h3><p lang="pl">Płyta, piekarnik lub mikrofala, lodówka, czajnik, toster i ekspres do kawy na kapsułki.</p><p lang="en">Hob, oven or microwave, fridge, kettle, toaster and a capsule coffee machine.</p></div>
+        <div><h3 lang="pl">Łazienka z pralką</h3><h3 lang="en">Bathroom with washer</h3><p lang="pl">Prysznic, mydło i żel pod prysznic, a do tego pralka, przydatna przy dłuższych pobytach.</p><p lang="en">A shower with soap and shower gel, plus a washing machine for longer stays.</p></div>
+        <div><h3 lang="pl">Smart TV i Netflix</h3><h3 lang="en">Smart TV and Netflix</h3><p lang="pl">Telewizor z dostępem do Netflixa i szybkie Wi-Fi.</p><p lang="en">A TV with Netflix and fast Wi-Fi.</p></div>
+        <div><h3 lang="pl">Zameldowanie z kodem</h3><h3 lang="en">Code check-in</h3><p lang="pl">Elektroniczny zamek w drzwiach. Kod dostajesz przed przyjazdem, bez umawiania się na klucze.</p><p lang="en">An electronic door lock. You get the code before arrival, no key handover to arrange.</p></div>
+        <div><h3 lang="pl">Bezpłatny parking</h3><h3 lang="en">Free parking</h3><p lang="pl">Ogrodzony parking 7 minut spacerem od budynku, bez dodatkowych opłat.</p><p lang="en">A gated car park a 7-minute walk from the building, at no extra charge.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="budynek">
+    <div class="wrap bld">
+      <div class="t">
+        <h2><span lang="pl">Kamienica przy Limanowskiego</span><span lang="en">The building on Limanowskiego</span></h2>
+        <p lang="pl">Apartamenty zajmują wyremontowane poddasze dziewiętnastowiecznej kamienicy w Podgórzu. Na klatce schodowej zostały szachownicowe posadzki, kute balustrady i wysokie sufity, a na górze czekają nowoczesne, jasne wnętrza pod oknami dachowymi.</p>
+        <p lang="en">The apartments fill the renovated attic of a nineteenth-century tenement in Podgórze. The stairwell keeps its checkerboard floors, wrought-iron railings and high ceilings; upstairs you find modern, bright rooms under skylights.</p>
+      </div>
+      <figure class="a"><img src="../img/wspolne-wspolne-4-s.webp" alt="Korytarz z szachownicową posadzką" loading="lazy"></figure>
+      <figure class="b"><img src="../img/wspolne-wspolne-3-s.webp" alt="Klatka schodowa z kutą balustradą" loading="lazy"></figure>
+      <figure class="c"><img src="../img/wspolne-wspolne-2-2.webp" alt="Fasada kamienicy przy ul. Limanowskiego 25" loading="lazy"></figure>
+      <figure class="d"><img src="../img/wspolne-wspolne-s.webp" alt="Drzwi apartamentu 23" loading="lazy"></figure>
+      <figure class="e"><img src="../img/wspolne-wspolne-2.webp" alt="Korytarz na poddaszu z oknem dachowym" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <div class="checker" aria-hidden="true"></div>
+
+  <section id="okolica">
+    <div class="wrap area">
+      <div>
+        <h2><span lang="pl">Podgórze, po drugiej stronie Wisły</span><span lang="en">Podgórze, across the Vistula</span></h2>
+        <p class="lede" lang="pl" style="margin-top:22px">Spokojniejsza strona Krakowa, z kawiarniami nad rzeką, kładką Bernatką prowadzącą prosto na Kazimierz i tramwajem pod domem.</p>
+        <p class="lede" lang="en" style="margin-top:22px">The calmer side of Kraków, with riverside cafés, the Bernatka footbridge straight to Kazimierz and a tram stop outside.</p>
+        <ul class="dist">
+          <li><span lang="pl">Przystanek tramwajowy</span><span lang="en">Tram stop</span><span>1 min</span></li>
+          <li><span lang="pl">Plac Bohaterów Getta</span><span lang="en">Ghetto Heroes Square</span><span>3 min</span></li>
+          <li><span lang="pl">Stacja kolejowa Kraków Zabłocie (pociąg na lotnisko i Dworzec Główny)</span><span lang="en">Kraków Zabłocie railway station (trains to the airport and main station)</span><span lang="pl">7 min pieszo</span><span lang="en">7 min walk</span></li>
+          <li><span lang="pl">Rynek Podgórski i kościół św. Józefa</span><span lang="en">Rynek Podgórski and St Joseph's Church</span><span>10 min</span></li>
+          <li><span lang="pl">Kładka Bernatka i bulwary</span><span lang="en">Bernatka footbridge and boulevards</span><span>10 min</span></li>
+          <li><span lang="pl">Kazimierz</span><span lang="en">Kazimierz</span><span>15 min</span></li>
+          <li><span lang="pl">Fabryka Schindlera</span><span lang="en">Schindler's Factory</span><span>15 min</span></li>
+          <li><span lang="pl">Wawel</span><span lang="en">Wawel Castle</span><span lang="pl">10 min tramwajem / 25 min pieszo</span><span lang="en">10 min by tram / 25 min walk</span></li>
+          <li><span lang="pl">Rynek Główny</span><span lang="en">Main Market Square</span><span lang="pl">15 min tramwajem / 35 min pieszo</span><span lang="en">15 min by tram / 35 min walk</span></li>
+        </ul>
+      </div>
+      <div class="mosaic">
+        <figure class="m1"><img src="../img/wspolne-wspolne-13.webp" alt="Widok na Rynek Podgórski i kościół św. Józefa" loading="lazy"><figcaption>Rynek Podgórski</figcaption></figure>
+        <figure class="m2"><img src="../img/wspolne-wspolne-5-2-s.webp" alt="Kładka Bernatka" loading="lazy"><figcaption><span lang="pl">Kładka Bernatka</span><span lang="en">Bernatka footbridge</span></figcaption></figure>
+        <figure class="m3"><img src="../img/wspolne-wspolne-8-s.webp" alt="Kawiarnie w Podgórzu" loading="lazy"><figcaption><span lang="pl">Kawiarnie</span><span lang="en">Cafés</span></figcaption></figure>
+        <figure class="m4"><img src="../img/wspolne-wspolne-10-s.webp" alt="Plac Bohaterów Getta" loading="lazy"><figcaption><span lang="pl">Plac Bohaterów Getta</span><span lang="en">Ghetto Heroes Square</span></figcaption></figure>
+        <figure class="m5"><img src="../img/wspolne-wspolne-7-2-s.webp" alt="Bulwary wiślane" loading="lazy"><figcaption><span lang="pl">Bulwary</span><span lang="en">Riverside</span></figcaption></figure>
+        <figure class="m6"><img src="../img/wspolne-wspolne-3-2-s.webp" alt="Tramwaj na ul. Limanowskiego" loading="lazy"><figcaption><span lang="pl">Tramwaj</span><span lang="en">Tram</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="map">
+        <iframe title="Mapa: ul. Limanowskiego 25, Kraków" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=ul.+Boles%C5%82awa+Limanowskiego+25,+Krak%C3%B3w&z=15&output=embed"></iframe>
+        <div class="map-side">
+          <div>
+            <h3>ul. Bolesława Limanowskiego 25</h3>
+            <p style="margin-top:8px">Podgórze, Kraków</p>
+            <p style="margin-top:14px" lang="pl">Bezpłatny parking 7 minut spacerem od budynku. Dokładną lokalizację parkingu i kod do drzwi wysyłamy przed przyjazdem.</p>
+            <p style="margin-top:14px" lang="en">Free parking a 7-minute walk from the building. We send the car park location and the door code before arrival.</p>
+          </div>
+          <div class="btns">
+            <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=ul.+Boles%C5%82awa+Limanowskiego+25,+Krak%C3%B3w" target="_blank" rel="noopener"><span lang="pl">Wyznacz trasę</span><span lang="en">Get directions</span></a>
+            <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=ul.+Boles%C5%82awa+Limanowskiego+25,+Krak%C3%B3w" target="_blank" rel="noopener"><span lang="pl">Otwórz w Google Maps</span><span lang="en">Open in Google Maps</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="book" id="rezerwacja">
+    <div class="wrap book-grid">
+      <div>
+        <h2><span lang="pl">Sprawdź dostępność</span><span lang="en">Check availability</span></h2>
+        <p class="lede" lang="pl" style="margin-top:22px">Rezerwując bezpośrednio u nas, płacisz bez prowizji serwisów rezerwacyjnych. Podaj termin, a odpiszemy z dostępnymi apartamentami i ceną.</p>
+        <p class="lede" lang="en" style="margin-top:22px">Book direct and skip the booking-site fees. Tell us your dates and we will reply with the available apartments and the price.</p>
+        <div class="ota" id="ota"></div>
+      </div>
+      <form id="enquiry" novalidate>
+        <label for="f-in"><span lang="pl">Przyjazd</span><span lang="en">Arrival</span><input type="date" id="f-in" required></label>
+        <label for="f-out"><span lang="pl">Wyjazd</span><span lang="en">Departure</span><input type="date" id="f-out" required></label>
+        <label for="f-guests"><span lang="pl">Liczba gości</span><span lang="en">Guests</span>
+          <select id="f-guests"></select></label>
+        <label for="f-apt"><span lang="pl">Apartament</span><span lang="en">Apartment</span>
+          <select id="f-apt"><option value="" data-pl="Dowolny" data-en="Any">Dowolny</option></select></label>
+        <label for="f-name" class="full"><span lang="pl">Imię i nazwisko</span><span lang="en">Name</span><input type="text" id="f-name" autocomplete="name"></label>
+        <label for="f-msg" class="full"><span lang="pl">Wiadomość (opcjonalnie)</span><span lang="en">Message (optional)</span><textarea id="f-msg"></textarea></label>
+        <div class="form-actions full">
+          <button class="btn" type="submit" data-via="mail"><span lang="pl">Wyślij zapytanie e-mailem</span><span lang="en">Send enquiry by email</span></button>
+          <button class="btn ghost" type="submit" data-via="wa"><span lang="pl">Napisz na WhatsApp</span><span lang="en">Message on WhatsApp</span></button>
+        </div>
+        <p class="form-msg full" id="formMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <section id="informacje">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><span lang="pl">Dobrze wiedzieć</span><span lang="en">Good to know</span></h2>
+      </div>
+      <div class="info">
+        <div>
+          <details open><summary><span lang="pl">Zameldowanie i wymeldowanie</span><span lang="en">Check-in and check-out</span></summary>
+            <p lang="pl">Zameldowanie od <span data-cfg="checkin"></span>, wymeldowanie do <span data-cfg="checkout"></span>. Przed przyjazdem wysyłamy kod do drzwi i instrukcję dojścia, więc możesz przyjechać o dowolnej porze.</p>
+            <p lang="en">Check-in from <span data-cfg="checkin"></span>, check-out by <span data-cfg="checkout"></span>. Before arrival we send the door code and directions, so you can arrive at any time.</p></details>
+          <details><summary><span lang="pl">Parking</span><span lang="en">Parking</span></summary>
+            <p lang="pl">Bezpłatny, ogrodzony parking znajduje się 7 minut spacerem od budynku. Szczegóły dojazdu wysyłamy razem z kodem.</p>
+            <p lang="en">A free, gated car park is a 7-minute walk from the building. We send directions together with the door code.</p></details>
+        </div>
+        <div>
+          <details><summary><span lang="pl">Faktura VAT</span><span lang="en">VAT invoice</span></summary>
+            <p lang="pl">Wystawiamy faktury dla firm. Podaj dane do faktury w wiadomości przy rezerwacji.</p>
+            <p lang="en">We issue VAT invoices for companies. Add your company details to the booking message.</p></details>
+          <details><summary><span lang="pl">Dłuższe pobyty</span><span lang="en">Longer stays</span></summary>
+            <p lang="pl">Przy pobytach od tygodnia zapytaj o cenę, przygotujemy indywidualną ofertę.</p>
+            <p lang="en">For stays of a week or more, ask for a quote and we will prepare an individual offer.</p></details>
+          <details><summary><span lang="pl">Zwierzęta i palenie</span><span lang="en">Pets and smoking</span></summary>
+            <p lang="pl">W apartamentach obowiązuje zakaz palenia. Zapytaj nas o pobyt ze zwierzęciem.</p>
+            <p lang="en">All apartments are non-smoking. Ask us about staying with a pet.</p></details>
+        </div>
+      </div>
+
+      <div id="kontakt" class="contact">
+        <div><small lang="pl">Telefon</small><small lang="en">Phone</small><a data-cfg-link="tel"></a></div>
+        <div><small>E-mail</small><a data-cfg-link="mail"></a></div>
+        <div><small lang="pl">Adres</small><small lang="en">Address</small><span style="font:500 20px var(--display)">ul. Bolesława Limanowskiego 25, Kraków</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <img src="../img/logo.png" alt="L25 Premium Apartments" width="78" height="92">
+    <div>
+      <p>Old Town Vistula Premium Apartments Sp. z o.o.<br>ul. Bolesława Limanowskiego 4/4a, 30-534 Kraków<br>NIP 6793324449 · KRS 0001159123</p>
+    </div>
+    <div style="text-align:right">
+      <p><a href="#rezerwacja"><span lang="pl">Rezerwacja</span><span lang="en">Booking</span></a></p>
+      <p>© <span id="yr"></span> L25 Premium Apartments</p>
+    </div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Galeria">
+  <div class="lb-top"><span><b id="lbTitle"></b> <span id="lbCount"></span><span class="lb-desc" id="lbDesc"></span></span><button type="button" id="lbClose" aria-label="Zamknij">×</button></div>
+  <div class="lb-stage"><button type="button" class="prev" id="lbPrev" aria-label="Poprzednie">‹</button><img id="lbImg" alt=""><button type="button" class="next" id="lbNext" aria-label="Następne">›</button></div>
+  <div class="lb-thumbs" id="lbThumbs"></div>
+</div>
+
+<script>
+/* ===== Do uzupełnienia przed publikacją ===== */
+const CONFIG = {
+  phone: "+48 888 488 519",
+  email: "rezerwacje@l25apartments.pl",
+  whatsapp: "48888488519",
+  checkin: "16:00",
+  checkout: "10:00",
+  bookingUrl: "",       // link do obiektu na Booking.com
+  airbnbUrl: ""         // link do profilu gospodarza na Airbnb
+};
+
+/* Apartamenty: pierwsze zdjęcie = okładka */
+const APTS = [
+  { no:"18", guests:6, wide:true, photos:["18-18-4","18-18-5","18-18-6","18-18-7","18-18-2","18-18-3","18-18","18-18-9","18-18-8"],
+    pl:{t:"Apartament z 1 sypialnią", d:"Najbardziej przestronny układ na poddaszu: część dzienna ze stołem dla sześciu osób, sypialnia z błękitną ścianą i osobny kącik do czytania przy fikusie.", tags:["Osobna sypialnia","Łóżko podwójne","2 sofy rozkładane","Stół dla 6 osób"]},
+    en:{t:"One-bedroom apartment", d:"The most spacious attic layout: a living area with a table for six, a bedroom with a blue accent wall and a separate reading corner.", tags:["Separate bedroom","Double bed","2 sofa beds","Table for 6"]} },
+  { no:"19", guests:4, photos:["19-19-5","19-19-3","19-19-4","19-19-6","19-19-8","19-19-7","19-19-2","19-19"],
+    pl:{t:"Studio", d:"Szałwiowa ściana za łóżkiem, rozkładany narożnik i czarna kuchnia z drewnianym blatem w jodełkę. Łazienka z ryflowanym drewnem i okrągłym lustrem.", tags:["Łóżko podwójne","Rozkładany narożnik","Kuchnia","Prysznic"]},
+    en:{t:"Studio", d:"A sage-green wall behind the bed, a corner sofa bed and a black kitchen with a herringbone wood splashback. The bathroom has fluted wood and a round mirror.", tags:["Double bed","Corner sofa bed","Kitchen","Shower"]} },
+  { no:"20", guests:4, photos:["20-19-2","20-19","20-19-3","20-19-4","20-19-5","20-19-6"],
+    pl:{t:"Studio", d:"Dwa okna dachowe nad okrągłym stołem, łóżko pod szarym łukiem i łazienka w czarnym marmurze.", tags:["Łóżko podwójne","Sofa rozkładana","Okrągły stół","Prysznic"]},
+    en:{t:"Studio", d:"Two skylights above a round dining table, a bed beneath a painted grey arch and a black-marble bathroom.", tags:["Double bed","Sofa bed","Round table","Shower"]} },
+  { no:"21", guests:4, photos:["21-19-4","21-19-5","21-19-6","21-19","21-19-7","21-19-8","21-19-3","21-19-2","21-19-9"],
+    pl:{t:"Studio", d:"Beżowy łuk nad łóżkiem, lampy z drewnianymi kloszami nad stołem i łazienka w miodowym marmurze.", tags:["Łóżko podwójne","Sofa rozkładana","Okrągły stół","Prysznic"]},
+    en:{t:"Studio", d:"A beige arch over the bed, wooden pendant lamps over the table and a honey-toned marble bathroom.", tags:["Double bed","Sofa bed","Round table","Shower"]} },
+  { no:"22", guests:4, photos:["22-22-2","22-22","22-22-3","22-22-4","22-22-5","22-22-6"],
+    pl:{t:"Studio", d:"Biała kuchnia z czarnym blatem, dużo światła z trzech okien w dachu i łazienka w grafitowym marmurze.", tags:["Łóżko podwójne","Sofa rozkładana","Okrągły stół","Prysznic"]},
+    en:{t:"Studio", d:"A white kitchen with a black worktop, light from three roof windows and a graphite-marble bathroom.", tags:["Double bed","Sofa bed","Round table","Shower"]} },
+  { no:"23", guests:4, photos:["23-23-2","23-23-3","23-23-4","23-23","23-23-5","23-23-6","23-23-7"],
+    pl:{t:"Studio", d:"Długie, otwarte wnętrze z rzędem okien dachowych, łóżkiem pod łukiem i dużą rozkładaną sofą. Kuchnia na końcu sali, łazienka z wzorzystymi płytkami.", tags:["Łóżko podwójne","Sofa rozkładana","Stół","Prysznic"]},
+    en:{t:"Studio", d:"A long open room with a row of skylights, a bed under an arch and a large sofa bed. The kitchen sits at the far end; the bathroom has patterned tiles.", tags:["Double bed","Sofa bed","Table","Shower"]} },
+  { no:"24", guests:6, wide:true, photos:["24-19-8","24-19-2","24-19-5","24-19-3","24-19-4","24-19-6","24-19-7"],
+    pl:{t:"Apartament z 1 sypialnią", d:"Sypialnia z dwoma łóżkami podwójnymi i salon z kremową rozkładaną sofą oraz białą kuchnią. Dobry wybór dla rodziny lub dwóch par.", tags:["Osobna sypialnia","2 łóżka podwójne","Sofa rozkładana","Prysznic"]},
+    en:{t:"One-bedroom apartment", d:"A bedroom with two double beds and a living room with a cream sofa bed and white kitchen. A good choice for a family or two couples.", tags:["Separate bedroom","2 double beds","Sofa bed","Shower"]} }
+];
+
+/* ===== Logika strony ===== */
+let LANG = "pl";
+const $ = s => document.querySelector(s);
+
+function renderApts(){
+  const box = $("#apts"); box.innerHTML = "";
+  APTS.forEach((a,i) => {
+    const el = document.createElement("article");
+    el.className = "apt" + (a.wide ? " wide" : "");
+    const L = a[LANG];
+    el.innerHTML = `
+      <button class="ph" type="button" data-open="${i}" aria-label="${LANG==="pl"?"Galeria":"Gallery"} L25/${a.no}">
+        <img src="../img/${a.photos[0]}-s.webp" alt="L25/${a.no}" loading="lazy">
+        <span class="count">${a.photos.length} ${LANG==="pl"?"zdjęć":"photos"}</span>
+      </button>
+      <h3>${LANG==="pl"?"Nr":"No."} ${a.no} – ${L.t}</h3>
+      <div class="row">
+        <span class="tags"><b class="guests">${LANG==="pl"?"Do "+a.guests+" osób":"Up to "+a.guests+" guests"}</b> · ${L.tags.slice(0, a.wide ? 3 : 2).join(" · ")}</span>
+        <span class="links">
+          <button type="button" data-open="${i}">${LANG==="pl"?"Galeria":"Gallery"}</button>
+          <a href="#rezerwacja" data-pick="${a.no}">${LANG==="pl"?"Zapytaj o termin":"Ask about dates"}</a>
+        </span>
+      </div>`;
+    box.appendChild(el);
+  });
+}
+
+function renderSelect(){
+  const s = $("#f-apt"), v = s.value;
+  s.innerHTML = `<option value="">${LANG==="pl"?"Dowolny":"Any"}</option>` + APTS.map(a=>`<option value="${a.no}">${LANG==="pl"?"Nr":"No."} ${a.no} – ${a[LANG].t} (${LANG==="pl"?"do "+a.guests+" os.":"up to "+a.guests})</option>`).join("");
+  s.value = v;
+  syncGuests();
+}
+/* liczba gości zależna od apartamentu */
+const MAXG = Math.max(...APTS.map(a=>a.guests));
+function syncGuests(){
+  const apt = $("#f-apt"), g = $("#f-guests");
+  const cur = +g.value || 2;
+  const a = APTS.find(x => x.no === apt.value);
+  const max = a ? a.guests : MAXG;
+  g.innerHTML = Array.from({length:max},(_,i)=>`<option>${i+1}</option>`).join("");
+  g.value = String(Math.min(cur, max));
+  // przy większej liczbie gości ukryj apartamenty, które jej nie pomieszczą
+  [...apt.options].forEach(o => { if (!o.value) return; const ap = APTS.find(x=>x.no===o.value); o.disabled = ap.guests < +g.value; });
+}
+
+function renderConfig(){
+  document.querySelectorAll("[data-cfg]").forEach(e => e.textContent = CONFIG[e.dataset.cfg]);
+  const tel = document.querySelector('[data-cfg-link="tel"]');
+  if (CONFIG.phone){ tel.textContent = CONFIG.phone; tel.href = "tel:" + CONFIG.phone.replace(/\s/g,""); }
+  else { tel.textContent = LANG==="pl" ? "Numer wkrótce" : "Number coming soon"; tel.removeAttribute("href"); }
+  const mail = document.querySelector('[data-cfg-link="mail"]');
+  mail.parentElement.style.display = CONFIG.email ? "" : "none";
+  if (CONFIG.email){ mail.textContent = CONFIG.email; mail.href = "mailto:" + CONFIG.email; }
+  const ota = $("#ota"); ota.innerHTML = "";
+  if (CONFIG.bookingUrl) ota.innerHTML += `<a href="${CONFIG.bookingUrl}" target="_blank" rel="noopener">${LANG==="pl"?"Nasze opinie na Booking.com":"Our reviews on Booking.com"}</a>`;
+  if (CONFIG.airbnbUrl) ota.innerHTML += `<a href="${CONFIG.airbnbUrl}" target="_blank" rel="noopener">${LANG==="pl"?"Nasz profil na Airbnb":"Our Airbnb profile"}</a>`;
+  document.querySelector('[data-via="wa"]').style.display = CONFIG.whatsapp ? "" : "none";
+  document.querySelector('[data-via="mail"]').style.display = CONFIG.email ? "" : "none";
+  if (!CONFIG.email) { via = "wa"; document.querySelector('[data-via="wa"]').className = "btn"; }
+}
+
+function setLang(l){
+  LANG = l;
+  document.documentElement.dataset.lang = l;
+  document.documentElement.lang = l;
+  document.querySelectorAll("[data-set-lang]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.setLang===l)));
+  try { localStorage.setItem("l25-lang", l); } catch(e){}
+  renderApts(); renderSelect(); renderConfig();
+}
+
+/* galeria */
+let cur = {a:0,i:0};
+function openLb(a,i=0){
+  cur = {a,i}; drawLb(); $("#lb").classList.add("open"); document.body.style.overflow="hidden"; $("#lbClose").focus();
+}
+function drawLb(){
+  const a = APTS[cur.a];
+  $("#lbImg").src = `../img/${a.photos[cur.i]}.webp`;
+  $("#lbImg").alt = `L25/${a.no}, ${cur.i+1}`;
+  $("#lbTitle").textContent = (LANG==="pl"?"Nr ":"No. ") + a.no + " – " + a[LANG].t;
+  $("#lbDesc").textContent = a[LANG].d;
+  $("#lbCount").textContent = `${cur.i+1} / ${a.photos.length}`;
+  $("#lbThumbs").innerHTML = a.photos.map((p,k)=>`<img src="../img/${p}-s.webp" data-k="${k}" class="${k===cur.i?"on":""}" alt="">`).join("");
+}
+function step(d){ const n = APTS[cur.a].photos.length; cur.i = (cur.i + d + n) % n; drawLb(); }
+function closeLb(){ $("#lb").classList.remove("open"); document.body.style.overflow=""; }
+
+document.addEventListener("click", e => {
+  const o = e.target.closest("[data-open]"); if (o){ openLb(+o.dataset.open); return; }
+  const p = e.target.closest("[data-pick]"); if (p){ $("#f-apt").value = p.dataset.pick; syncGuests(); }
+  const t = e.target.closest("#lbThumbs img"); if (t){ cur.i = +t.dataset.k; drawLb(); }
+  const sl = e.target.closest("[data-set-lang]"); if (sl) setLang(sl.dataset.setLang);
+  if (e.target.closest("#nav a")) { $("#nav").classList.remove("open"); $("#menuBtn").setAttribute("aria-expanded","false"); }
+});
+$("#lbPrev").onclick = () => step(-1);
+$("#lbNext").onclick = () => step(1);
+$("#lbClose").onclick = closeLb;
+$("#lb").addEventListener("click", e => { if (e.target.id === "lb" || e.target.classList.contains("lb-stage")) closeLb(); });
+document.addEventListener("keydown", e => {
+  if (!$("#lb").classList.contains("open")) return;
+  if (e.key === "Escape") closeLb();
+  if (e.key === "ArrowRight") step(1);
+  if (e.key === "ArrowLeft") step(-1);
+});
+$("#menuBtn").onclick = () => { const n = $("#nav"); n.classList.toggle("open"); $("#menuBtn").setAttribute("aria-expanded", String(n.classList.contains("open"))); };
+
+/* formularz zapytania */
+let via = "mail";
+document.querySelectorAll("[data-via]").forEach(b => b.addEventListener("click", () => via = b.dataset.via));
+const today = new Date().toISOString().slice(0,10);
+$("#f-in").min = today; $("#f-out").min = today;
+$("#f-apt").addEventListener("change", syncGuests);
+$("#f-guests").addEventListener("change", syncGuests);
+$("#f-in").addEventListener("change", () => { $("#f-out").min = $("#f-in").value; });
+$("#enquiry").addEventListener("submit", e => {
+  e.preventDefault();
+  const msg = $("#formMsg");
+  const din = $("#f-in").value, dout = $("#f-out").value;
+  if (!din || !dout){ msg.textContent = LANG==="pl" ? "Wybierz datę przyjazdu i wyjazdu." : "Choose your arrival and departure dates."; return; }
+  if (dout <= din){ msg.textContent = LANG==="pl" ? "Data wyjazdu musi być późniejsza niż data przyjazdu." : "Departure must be after arrival."; return; }
+  const apt = $("#f-apt").value ? "L25/" + $("#f-apt").value : (LANG==="pl" ? "dowolny" : "any");
+  const nights = Math.round((new Date(dout) - new Date(din)) / 864e5);
+  const body = LANG==="pl"
+    ? `Dzień dobry,\n\nproszę o informację o dostępności:\nPrzyjazd: ${din}\nWyjazd: ${dout} (${nights} noce/nocy)\nLiczba gości: ${$("#f-guests").value}\nApartament: ${apt}\n\n${$("#f-msg").value}\n\n${$("#f-name").value}`
+    : `Hello,\n\nI'd like to check availability:\nArrival: ${din}\nDeparture: ${dout} (${nights} nights)\nGuests: ${$("#f-guests").value}\nApartment: ${apt}\n\n${$("#f-msg").value}\n\n${$("#f-name").value}`;
+  if (via === "wa" && CONFIG.whatsapp){
+    window.location.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(body)}`;
+  } else if (CONFIG.email){
+    window.location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent((LANG==="pl"?"Zapytanie o pobyt ":"Booking enquiry ") + din)}&body=${encodeURIComponent(body)}`;
+    msg.textContent = LANG==="pl" ? `Otwieramy Twój program pocztowy. Jeśli się nie otworzył, napisz na ${CONFIG.email}.` : `Opening your email app. If nothing happens, write to ${CONFIG.email}.`;
+  } else {
+    msg.textContent = LANG==="pl" ? "Formularz zacznie działać po uzupełnieniu adresu e-mail." : "The form will work once the email address is set.";
+  }
+});
+
+if (/claude|anthropic|localhost/.test(location.hostname)) { const f = document.querySelector(".map iframe"); const d = document.createElement("div"); d.className = "map-ph"; d.textContent = "Podgląd: mapa Google wyświetli się na docelowej domenie."; f.replaceWith(d); }
+$("#yr").textContent = new Date().getFullYear();
+let saved = "pl";
+try { saved = localStorage.getItem("l25-lang") || (navigator.language.startsWith("pl") ? "pl" : "en"); } catch(e){}
+if (location.hash === "#en") saved = "en";
+setLang(saved);
+</script>
+</body>
+</html>
